@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: opensky-producer
+spec:
+  containers:
+  - name: opensky-producer
+    image: petergpinto/opensky_producer:1.0.7
+    env:
+    - name: RUST_LOG
+      value: info
